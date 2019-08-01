@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.SimplePayment", "Web.SimplePayment\Web.SimplePayment.csproj", "{0F4E7380-E998-4A95-8137-C6523ACCD83F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.Commerce.ServiceProxy", "Sitecore.Commerce.ServiceProxy\Sitecore.Commerce.ServiceProxy.csproj", "{44BEC319-77FF-4B11-84EF-FB0C1B88241B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F4E7380-E998-4A95-8137-C6523ACCD83F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4E7380-E998-4A95-8137-C6523ACCD83F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4E7380-E998-4A95-8137-C6523ACCD83F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4E7380-E998-4A95-8137-C6523ACCD83F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BEC319-77FF-4B11-84EF-FB0C1B88241B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BEC319-77FF-4B11-84EF-FB0C1B88241B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BEC319-77FF-4B11-84EF-FB0C1B88241B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BEC319-77FF-4B11-84EF-FB0C1B88241B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4A1ED26-C37E-4985-A433-BA160B2CD86A}
+	EndGlobalSection
+EndGlobal
