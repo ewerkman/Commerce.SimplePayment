@@ -1,10 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="SettleSimplePaymentBlock.cs" company="Sitecore Corporation">
-//   Copyright (c) Sitecore Corporation 1999-2019
-// </copyright>
-// --------------------------------------------------------------------------------------------------------------------
-
-namespace Commerce.Plugin.Sample.Payment.Pipelines.Blocks
+﻿namespace Commerce.Plugin.Sample.Payment.Pipelines.Blocks
 {
     using System;
     using System.Collections.Generic;
@@ -22,17 +16,8 @@ namespace Commerce.Plugin.Sample.Payment.Pipelines.Blocks
     [PipelineDisplayName(nameof(SettleSimplePaymentBlock)]
     public class SettleSimplePaymentBlock : PipelineBlock<Order, Order, CommercePipelineExecutionContext>
     {
-        /// <summary>
-        /// Gets or sets the commander.
-        /// </summary>
-        /// <value>
-        /// The commander.
-        /// </value>
         protected CommerceCommander Commander { get; set; }
 
-        /// <inheritdoc />
-        /// <summary>Initializes a new instance of the <see cref="T:Sitecore.Framework.Pipelines.PipelineBlock" /> class.</summary>
-        /// <param name="commander">The commerce commander.</param>
         public SettleSimplePaymentBlock(CommerceCommander commander)
             : base(null)
         {
@@ -41,18 +26,6 @@ namespace Commerce.Plugin.Sample.Payment.Pipelines.Blocks
 
         }
 
-        /// <summary>
-        /// The execute.
-        /// </summary>
-        /// <param name="order">
-        /// The pipeline argument.
-        /// </param>
-        /// <param name="context">
-        /// The context.
-        /// </param>
-        /// <returns>
-        /// The <see cref="PipelineArgument"/>.
-        /// </returns>
         public override async Task<Order> Run(Order arg, CommercePipelineExecutionContext context)
         {
             Condition.Requires(arg).IsNotNull($"{this.Name}: The order cannot be null.");
