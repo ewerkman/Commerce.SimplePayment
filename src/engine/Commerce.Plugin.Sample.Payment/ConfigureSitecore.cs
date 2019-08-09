@@ -5,6 +5,7 @@ namespace Commerce.Plugin.Sample.Payment
     using Microsoft.Extensions.DependencyInjection;
     using Sitecore.Commerce.Core;
     using Sitecore.Commerce.Plugin.Orders;
+    using Sitecore.Commerce.Plugin.Payments;
     using Sitecore.Framework.Configuration;
     using Sitecore.Framework.Pipelines.Definitions.Extensions;
 
@@ -17,7 +18,8 @@ namespace Commerce.Plugin.Sample.Payment
 
             services.Sitecore().Pipelines(config => config
                 .ConfigurePipeline<IConfigureServiceApiPipeline>(c => c.Add<ConfigureServiceApiBlock>())
-                .ConfigurePipeline<IPendingOrdersMinionPipeline>(c => c.Add<SettleSimplePaymentBlock>().Before<ProcessProblemOrderBlock>())
+                .ConfigurePipeline<ISettleSalesActivityPipeline>(c => c.Add<SettleSimplePaymentBlock>().Before<MoveAndPersistSalesActivityBlock>())
+                .ConfigurePipeline<IRefundPaymentsPipeline>(c => c.Add<RefundSimplePaymentBlock>().Before<PersistOrderBlock>())
                 );
 
             services.RegisterAllCommands(assembly);
