@@ -254,6 +254,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\include\zz\AddSimplePaymentInfoToCart.config" />
+    <Content Include="App_Config\include\zz\ExtendParty.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
