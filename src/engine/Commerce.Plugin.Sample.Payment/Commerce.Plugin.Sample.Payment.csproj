@@ -14,15 +14,12 @@
     <Compile Remove="Commands\**" />
     <Compile Remove="Entities\**" />
     <Compile Remove="Models\**" />
-    <Compile Remove="Policies\**" />
     <EmbeddedResource Remove="Commands\**" />
     <EmbeddedResource Remove="Entities\**" />
     <EmbeddedResource Remove="Models\**" />
-    <EmbeddedResource Remove="Policies\**" />
     <None Remove="Commands\**" />
     <None Remove="Entities\**" />
     <None Remove="Models\**" />
-    <None Remove="Policies\**" />
   </ItemGroup>
 
   <ItemGroup>

@@ -258,8 +258,11 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\ExtendedCommerceParty.cs" />
     <Compile Include="Entities\SimplePaymentInfo.cs" />
     <Compile Include="Pipelines\AddSimplePaymentToCart.cs" />
+    <Compile Include="Pipelines\TranslateEntityToParty.cs" />
+    <Compile Include="Pipelines\TranslatePartyToEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
