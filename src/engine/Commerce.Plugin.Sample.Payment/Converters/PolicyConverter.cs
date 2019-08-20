@@ -5,7 +5,15 @@ using System;
 namespace Commerce.Plugin.Sample.Payment.Converters
 {
     /// <summary>
-    ///     Configure Newtonsoft.Json to use this converter by 
+    ///     Configure Newtonsoft.Json to use this converter by adding it to the Commerce.Engine project 
+    ///     in the constructor of the Startup class:
+    ///     
+    ///      JsonConvert.DefaultSettings = (() =>
+    ///        {
+    ///            var settings = new JsonSerializerSettings();
+    ///            settings.Converters.Add(new PolicyConverter());
+    ///            return settings;
+    ///        });
     /// </summary>
     public class PolicyConverter : ODataCreationConverter<Policy>
     {
